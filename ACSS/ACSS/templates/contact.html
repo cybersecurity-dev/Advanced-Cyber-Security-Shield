@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<address>
+    KU Leuven, ESAT/COSIC <br />
+    Kasteelpark Arenberg 10, bus 2452 <br />
+    B-3001 Leuven-Heverlee, Belgium <br />
+    <abbr title="Phone">P:+32 16 32 10 50</abbr>
+</address>
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.3326144097605!2d4.683320478231903!3d50.862041771673965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1611616a84773%3A0x2b4edbaf9cc3e8ba!2sDepartment%20of%20Electrical%20Engineering%20ESAT!5e0!3m2!1sen!2sbe!4v1696620664207!5m2!1sen!2sbe" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div>
+    <address>
+        <strong>Research Manager:</strong>   <a href="mailto:enrique.argonesrua@kuleuven.be">Enrique Argones Rua</a><br />
+        <strong>Researcher:</strong> <a href="mailto:irfan.bulut@kuleuven.be">Irfan Bulut</a>
+    </address>
+</div>
+
+<div>
+    <a class="twitter-timeline" href="https://twitter.com/CosicBe?ref_src=twsrc%5Etfw">Tweets by Cosic</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+{% endblock %}

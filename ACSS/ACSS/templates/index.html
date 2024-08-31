@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container py-4">
+
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Malware Detector</h1>
+            <p class="col-md-8 fs-4">CSAI Malware Detector.</p>
+            <p><a class="btn btn-primary btn-lg" href="{{ url_for('upload') }}">Lets use &raquo;</a></p>
+        </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                <h2>About CSAI Project</h2>
+                <p>The applied AI research team brings its expertise in cyber security to companies</p>
+                <p><a class="btn btn-info" href="https://www.vlaanderen.be/">Learn more &raquo;</a></p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                <h2>About COSIC Malware Detector</h2>
+                <p>Cosic Malware detector focusing to detect modern evasive malware and increase malware detection performance.</p>
+                <p><a class="btn btn-info" href="https://www.esat.kuleuven.be/cosic/">Learn more &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-3 mt-4 text-body-secondary border-top">
+        &copy; 2023
+    </footer>
+
+
+
+</div>
+{% endblock %}

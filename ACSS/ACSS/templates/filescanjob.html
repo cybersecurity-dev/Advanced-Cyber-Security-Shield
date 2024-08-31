@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+
+{% for message in get_flashed_messages() %}
+
+        {{ message }}
+
+{% endfor %}
+
+<h2>{{ title }}.</h2>
+
+<h3>{{ filename }}.</h3>
+
+<h4>{{ modeltype }}.</h4>
+
+
+<span>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</span>
+<img src="../static/img/malwr_result.png" width="250" height="100">
+<span>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</span>
+
+
+
+<!--
+<span>
+    <span> ..:Malware Analysis Result:.. </span>
+</span>
+
+<form action="/analyser" method="GET">
+    <label for="model">Choose Model:</label>
+    <select name="model" id="model">
+        <option value="short">Short</option>
+        <option value="medium">Medium</option>
+        <option value="long" selected>Long</option>
+        <option value="very_long">Very Long</option>
+    </select>
+    <input type="submit" name="analyse_button" value="analyse">
+</form>
+
+<form action="/filescan" method="GET">
+    <label for="model">Choose Model:</label>
+    <select name="model" id="model">
+        <option value="short">Short</option>
+        <option value="medium">Medium</option>
+        <option value="long" selected>Long</option>
+        <option value="very_long">Very Long</option>
+    </select>
+    <input type="submit" name="filescan_button" value="Get report">
+</form>
+-->
+{% endblock %}

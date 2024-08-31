@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<style>
+    .upload-container {
+        height: 200px;
+        position: relative;
+    }
+
+    .custom-file-button input[type=file] {
+        margin-left: -2px !important;
+    }
+
+        .custom-file-button input[type=file]::-webkit-file-upload-button {
+            display: none;
+        }
+
+        .custom-file-button input[type=file]::file-selector-button {
+            display: none;
+        }
+
+    .custom-file-button:hover label {
+        background-color: #dde0e3;
+        cursor: pointer;
+    }
+
+</style>
+
+<div style="text-align: center;">
+    <span>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </span>
+</div>
+<img src="../static/img/main.png" width="500" height="100">
+<div style="text-align: center;">
+    <span>
+        <br />
+        <br />
+    </span>
+    <span>
+        <span> Analyse suspicious files, domains, IPs and URLs to detect malware and other </span>
+        <span> breaches, automatically share them with the security community. </span>
+    </span>
+</div>
+<div class="upload-container">
+    <img src="../static/img/upload.png" width="150" height="150" />
+    <form action="/analyse" method="POST" enctype="multipart/form-data">
+        <div class="input-group custom-file-button">
+            <label class="input-group-text" for="inputGroupFile">Choose Model</label>
+            <input type="file" class="form-control form-control-lg" name="umodel" placeholder="field1">
+
+            <label class="input-group-text" for="inputGroupFile">Choose Sample</label>
+            <input type="file" class="form-control form-control-lg" name="usample" placeholder="field1">
+
+            <input type="submit" class="btn btn-primary btn-sm" value="Analyse" placeholder="field1" multiple>
+
+
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+{% endblock %}
