@@ -1,2 +1,7 @@
 Flask>=3.0.0
 Gunicorn
+pefile
+pandas
+numpy
+requests
+exiftool
