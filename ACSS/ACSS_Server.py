@@ -1,9 +1,10 @@
-from flask import Flask
-app = Flask(__name__)
+"""
+This script runs the ACSS application using a development server.
+"""
 
-@app.route('/')
-def hello_world():
-    return 'Welcome Malware Detector!..'
+from os import environ
+from ACSS import app
+
 
 if __name__ == '__main__':
     HOST = environ.get('SERVER_HOST', 'localhost')
