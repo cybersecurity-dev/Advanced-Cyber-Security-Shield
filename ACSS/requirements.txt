@@ -4,4 +4,4 @@ pefile
 pandas
 numpy
 requests
-exiftool
+PyExifTool
