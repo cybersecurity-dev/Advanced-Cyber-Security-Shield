@@ -425,6 +425,15 @@ def upload():
         message='by COSIC'
     )
 
+@app.route('/extractor')
+def extractor():
+    """Renders the upload page."""
+    return render_template(
+        'extractor.html',
+        title='PE Extractor',
+        year=datetime.now().year,
+        message='by COSIC'
+    )
 
 ############################################################################################################
 
@@ -559,11 +568,6 @@ def analyse():
 
 
 ############################################################################################################
-
-
-
-
-
 
 
 
