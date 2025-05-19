@@ -10,3 +10,14 @@
 | **EDR (Endpoint Detection And Response)** | NGEP + Detects and contains security incidents and restores hosts to pre-attack condition.                |
 | **XDR (Extended Detection And Response)** | Cross-data analytics, insights, driving most effective prevention, detection & response.                   |
 
+### Clamscan Virus Scanning
+
+Debian-based distros:
+```bash
+sudo apt-get install clamav clamav-daemon
+```
+
+Fedora-based distros:
+```bash
+sudo yum install clamav
+```
